@@ -1,0 +1,39 @@
+body{
+    background-color: black;
+    text-align: left;
+}
+
+.gekleurde-tekst{
+    color: white;
+    font-size: 125%;
+}
+
+.titel{
+    font-size: 150%;
+}
+
+.gekleurde-tekst2{
+    color: yellow;
+    font-size: 125%;
+}
+
+.gekleurde-tekst3{
+    color: lightgreen;
+    font-size: 125%;
+}
+
+.lettertype{
+    font-family: Arial;
+    font-size: 300%;
+}
+
+.lettertype2{
+    font-family: cursive;
+}
+
+.tekstblok{
+    background-color: red;
+    border: 2px;
+    padding: 10px;
+    margin: 5px;
+}
