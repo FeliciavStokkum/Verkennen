@@ -1,0 +1,45 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: greenyellow;
+}
+
+header p{
+    color: blue;
+    font-weight: bold;
+}
+
+h2{
+    color: orange;
+}
+
+section h2:first-of-type + p {
+    color: blue;
+    font-weight: bold;
+}
+
+section h2:first-of-type + p + p {
+    color: yellow;
+    font-style: italic;
+}
+
+section h2:first-of-type + p + p + p{
+    color: red;
+    font-family: monospace;
+}
+
+footer p {
+    color: red;
+    font-family: monospace;
+    text-decoration: underline;
+}
+
+body > p {
+    background-color: red;
+    color: yellow;
+    font-style: italic;
+}
