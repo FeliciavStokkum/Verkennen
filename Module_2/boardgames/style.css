@@ -1,11 +1,13 @@
 body{
     background-color: black;
     text-align: left;
+    width: auto;
 }
 
 .gekleurde-tekst{
     color: white;
     font-size: 125%;
+    margin: 5px;
 }
 
 .titel{
@@ -15,6 +17,7 @@ body{
 .gekleurde-tekst2{
     color: yellow;
     font-size: 125%;
+    margin-bottom: 5px;
 }
 
 .gekleurde-tekst3{
@@ -25,6 +28,8 @@ body{
 .lettertype{
     font-family: Arial;
     font-size: 300%;
+    margin-top: 0px;
+    margin: auto;
 }
 
 .lettertype2{
@@ -33,7 +38,17 @@ body{
 
 .tekstblok{
     background-color: red;
-    border: 2px;
+    border: 2px solid;
     padding: 10px;
-    margin: 5px;
+    margin-top: 10px; 
+    border-color: yellow;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+section{
+    padding: 5px;
 }
