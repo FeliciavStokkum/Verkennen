@@ -52,3 +52,15 @@ body{
 section{
     padding: 5px;
 }
+
+a:link {
+    color: white;
+}
+
+a:visited{
+    color: blue;
+}
+
+a:hover{
+    color: pink;
+}
