@@ -35,3 +35,15 @@ h3{
 strong{
     color: white;
 }
+
+#link{
+    color: black;
+}
+
+#link:visited{
+    color: blue;
+}
+
+#link:hover{
+    color: purple;
+}
