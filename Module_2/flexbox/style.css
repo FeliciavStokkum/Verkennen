@@ -1,0 +1,22 @@
+
+/*container*/
+nav { 
+  flex-direction: row-reverse;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: palevioletred;
+  align-content: space-between;
+}
+
+/*items*/
+nav>div {
+  align-content: center;
+  flex-basis: 100px;
+  flex-grow: 1;
+  height: 30px;
+  background-color: pink;
+  margin: 2px;
+  text-align: center;
+  padding: 20px;
+}
+
