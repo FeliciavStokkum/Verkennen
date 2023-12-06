@@ -5,9 +5,48 @@ body{
 div{
     margin-top: 0px;
     margin-bottom: 0px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #titel{
     font-size: 36px;
 }
+
+.tekst{
+    font-size: 20px;
+    line-height: 32px;
+}
+
+hr{
+    line-height: 36px;
+}
+
+#paragraaf1{
+    font-size: 24px;
+    line-height: 32px;
+}
+
+h3{
+    font-size: 32px;
+    line-height:32px;
+}
+
+#content{
+    margin: 40px;
+}
+
+#ruimte_ingredienten li{
+    margin-bottom: 10px;
+}
+
+#ruimte_bereiding li {
+    margin-top: 20px;
+}
+
+#groen{
+    background-color: #def6ed;
+    border-radius: 4px;
+}
+
+
