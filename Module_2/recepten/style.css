@@ -34,6 +34,7 @@ h3{
 
 #content{
     margin: 40px;
+    display: inline-block;
 }
 
 #ruimte_ingredienten li{
@@ -47,6 +48,21 @@ h3{
 #groen{
     background-color: #def6ed;
     border-radius: 4px;
+    padding: 25px;
 }
 
+#voorgerecht{
+    font-size: 20px;
+}
 
+#pagina {
+    margin: 0 auto;
+    width: 60%;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+#link {
+    display: inline-block;
+    margin-right: 15px; 
+}
