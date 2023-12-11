@@ -47,3 +47,15 @@ strong{
 #link:hover{
     color: purple;
 }
+
+@media(max-width: 768px){
+    .video{
+        display: none;
+    }
+}
+
+@media(min-width: 768px){
+    .video{
+        display: block;
+    }
+}

@@ -108,3 +108,15 @@ body{
   #inline {
     display: block;
   }
+
+  #krijgersfoto {
+    display: none; /* Standaard verberg de foto */
+  }
+  
+  @media screen and (min-width: 768px) {
+    #krijgersfoto {
+      display: block;
+      width: 50%; 
+      align-items: right;
+    }
+  }
