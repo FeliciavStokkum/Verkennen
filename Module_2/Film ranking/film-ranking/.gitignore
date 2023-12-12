@@ -1,0 +1,8 @@
+.DS_Store
+*/.DS_Store
+*.db
+*.pyc
+__pycache__/
+.idea/*
+docker/.env.docker
+
