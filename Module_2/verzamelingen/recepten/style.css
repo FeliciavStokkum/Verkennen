@@ -1,0 +1,68 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+div{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#titel{
+    font-size: 36px;
+}
+
+.tekst{
+    font-size: 20px;
+    line-height: 32px;
+}
+
+hr{
+    line-height: 36px;
+}
+
+#paragraaf1{
+    font-size: 24px;
+    line-height: 32px;
+}
+
+h3{
+    font-size: 32px;
+    line-height:32px;
+}
+
+#content{
+    margin: 40px;
+    display: inline-block;
+}
+
+#ruimte_ingredienten li{
+    margin-bottom: 10px;
+}
+
+#ruimte_bereiding li {
+    margin-top: 20px;
+}
+
+#groen{
+    background-color: #def6ed;
+    border-radius: 4px;
+    padding: 25px;
+}
+
+#voorgerecht{
+    font-size: 20px;
+}
+
+#pagina {
+    margin: 0 auto;
+    width: 60%;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+#link {
+    display: inline-block;
+    margin-right: 15px; 
+}

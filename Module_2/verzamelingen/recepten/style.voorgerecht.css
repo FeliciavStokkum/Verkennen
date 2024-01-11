@@ -1,0 +1,22 @@
+#link {
+    font-size: 20px;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+#groen{
+    background-color: #def6ed;
+    border-radius: 4px;
+    padding: 25px;
+    width: auto;
+}
+
+#pagina {
+    margin: 0 auto;
+    width: 60%;
+    font-size: 20px;
+    line-height: 36px;
+}

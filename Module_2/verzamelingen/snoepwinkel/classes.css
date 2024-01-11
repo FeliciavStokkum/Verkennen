@@ -1,0 +1,39 @@
+#zwart_lettertype{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#groen{
+    color: greenyellow;
+}
+
+.dik_en_blauw{
+    color: blue;
+    font-weight: bold;
+}
+
+.oranje{
+    color: orange;
+}
+
+.geel_cursief{
+    color: yellow;
+    font-style: italic;
+}
+
+.rood_monospace{
+    color: red;
+    font-family: monospace;
+}
+
+#geel_cursief_rood{
+    color: yellow;
+    font-style: italic;
+    background-color: red;
+}
+
+#rood_monospace_lijn{
+    color: red;
+    font-family: monospace;
+    text-decoration: underline;
+}

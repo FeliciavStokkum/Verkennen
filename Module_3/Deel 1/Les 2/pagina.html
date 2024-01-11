@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style (3).css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dit is mijn header</h1>
+    <div>Hier staat nu wat text</div>
+    <br>
+    <div>Geboortejaar</div>
+    <form id="form_profile">
+        <p>
+            <label>Leeftijd:</label>
+            <input type="text" name="input_leeftijd" id="input_leeftijd">
+        </p>
+
+    </form>
+    <div id="leeg" class="yellow">Test</div>
+    <div id="buttons"><button id="hier">Klik hier!</button><button id="maakLeegButton">Maak leeg</button></div>
+
+    <script>
+        function maakLeeg() {
+            leeg.innerText = "";
+        };
+
+        function handleHierButton(){
+            const currentYear = new Date().getFullYear();
+            const age = parseInt(input_leeftijd.value) || 0;
+            const birthyear = currentYear - age; 
+            // console.log(age);
+            // console.dir(input_leeftijd);
+            leeg.innerText = `Je bent geboren in: ${birthyear}`;
+            leeg.className = "green";
+            if (age < 18){
+                leeg.className = "red";
+            };
+
+            //vanaf hier allen nog maar syntaxuitleg!!
+            let y = 0;
+            for (let x = 0; x < 3; x++){
+                console.log(`x is gelijk aan ${x}`); 
+                y++;
+                console.log(`y is gelijk aan ${y}`); 
+            };
+        };
+
+        hier.addEventListener("click", handleHierButton);
+        maakLeegButton.addEventListener("click", maakLeeg);
+    </script>
+</body>
+</html>

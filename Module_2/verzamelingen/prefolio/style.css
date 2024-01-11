@@ -1,0 +1,61 @@
+body {
+    background-color: lightpink;
+    align-items: center;
+}
+
+#titel{
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#titel2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+p {
+    color: black;
+}
+
+h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h3{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+strong{
+    color: white;
+}
+
+#link{
+    color: black;
+}
+
+#link:visited{
+    color: blue;
+}
+
+#link:hover{
+    color: purple;
+}
+
+@media(max-width: 768px){
+    .video{
+        display: none;
+    }
+}
+
+@media(min-width: 768px){
+    .video{
+        display: block;
+    }
+}
