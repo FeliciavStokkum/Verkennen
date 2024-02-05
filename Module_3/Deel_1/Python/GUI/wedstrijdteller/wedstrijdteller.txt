@@ -1,0 +1,22 @@
+wedstrijdteller
+
+Wat moet er nog gebeuren?
+#* Teams invoeren + toevoegen aan scorebord!
+#* wie er begint
+* start de wedstrijd
+	checken:
+	2 namen + wie begint
+	Teams invoeren moet verdwijnen
+	gele vlak bij startende team
+	annuleer knop activeren
+	punten knop activeren 
+
+Tijdens spel bijhouden:
+* Wie is er aan de beurt
+* punten per team
+* scherm verversen
+* vorige keer gescoord
+
+annuleer knop: 
+punt aftrekken
+bijwerken gele vlak
