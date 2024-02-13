@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+}
+
+#knop{
+    position: absolute;
+    margin-left: auto;
+    margin-top: auto;
+}
+
+.black{
+    background-color: black;
+}
+
+.yellow{
+    background-color: yellow;
+}
