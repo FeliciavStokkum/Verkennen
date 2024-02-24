@@ -23,14 +23,14 @@
     let priceValue = price.value; // regel bevat bug
     let realPrice = PRICE; 
 
-    if priceValue != '' { 
-      let newPrice = number(priceValue); // regel bevat bug
-      realPrice == newPrice; // regel bevat 1 bug
+    if (priceValue != '') { 
+      let newPrice = Number(priceValue); // regel bevat bug
+      realPrice = newPrice; // regel bevat 1 bug
     } 
-    let total = realPrice x Number(amount.value); 
-    resultaat.txtContent = total.tofixed(2); // regel bevat 2 bugs
+    total = realPrice * Number(amount.value); 
+    resultaat.textContent = total.toFixed(2); // regel bevat 2 bugs
   }
 
-  bereken.addEventListener('click',berekenen); // regel bevat bug
+  bereken.addEventListener('click',berekening); // regel bevat bug
 </script>
 </html>
