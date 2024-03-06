@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_sushi.css">
+    <title>Sushi Bestelformulier</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Sushi Bestelformulier</h1>
+        <div id="sushiForm">
+            <div class="form-group sushi-item">
+                <label for="sushi1" class="form-label">Maki komkommer:</label>
+                <input type="number" class="form-control" id="maki_komkommer" name="maki_komkommer" min="0" max="10" value="0">
+            </div>
+            <div class="form-group sushi-item">
+                <label for="sushi2" class="form-label">Sashimi:</label>
+                <input type="number" class="form-control" id="sashimi" name="sashimi" min="0" max="10" value="0">
+            </div>
+            <div class="form-group sushi-item">
+                <label for="sushi3" class="form-label">nigiri:</label>
+                <input type="number" class="form-control" id="nigiri" name="nigiri" min="0" max="10" value="0">
+            </div>
+            <div class="form-group sushi-item">
+                <label for="sushi4" class="form-label">california roll:</label>
+                <input type="number" class="form-control" id="california_roll" name="california_roll" min="0" max="10" value="0">
+            </div>
+            <div class="form-group sushi-item">
+                <label for="sushi5" class="form-label">crispy roll:</label>
+                <input type="number" class="form-control" id="crispy_roll" name="crispy_roll" min="0" max="10" value="0">
+            </div>
+            <button type="button" class="btn btn-primary" onclick="validateOrder()">Bestellen</button>
+        </div>
+        <p id="totalPiecesWarning">Je kunt maximaal 10 stuks sushi bestellen.</p>
+    </div>
+
+    <script>
+        function validateOrder() {
+            const inputs = document.querySelectorAll('#sushiForm input[type="number"]');
+            let total = 0;
+            inputs.forEach(input => {
+                total += parseInt(input.value, 10);
+            });
+
+            if (total > 10) {
+                document.getElementById('totalPiecesWarning').style.display = 'block';
+            } else {
+                document.getElementById('totalPiecesWarning').style.display = 'none';
+                alert('Je bestelling is geplaatst!');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -7,8 +7,14 @@ let game =
     team2Punten: 0, 
     Serving:0,
     lastsServe:0, // Wie de vorige serve is
-    lastScored:0 // Wie het laatste punt heeft gescoord
+    lastScored:0, // Wie het laatste punt heeft gescoord
+    Team1Sets: 0,
+    Team2Sets: 0
 }
+
+let CounterTeam1Sets = document.getElementById('counterTeam1Sets');
+let CounterTeam2Sets = document.getElementById('counterTeam2Sets');
+
 
 inputTeam1.value = '...'; // testdata
 inputTeam2.value = '...'; // testdata
@@ -71,6 +77,27 @@ function count(event){
         game.lastScored = 2;
     }
 
+    if (game.team1Punten >= 25 && game.team1Punten - game.team2Punten >= 2){
+        game.team1Punten = 0;
+        game.team2Punten = 0;
+        game.serving = 0;
+        game.lastScored = 0;
+        game.lastServe = 0;
+        game.Team1Sets += 1;
+        CounterTeam1Sets.innerText = game.Team1Sets
+        alert(`${inputTeam1.value} heeft gewonnen! Gefeliciteerd.`)
+
+    } if (game.team2Punten >= 25 && game.team2Punten - game.team1Punten >= 2){
+        game.team1Punten = 0;
+        game.team2Punten = 0;
+        game.serving = 0;
+        game.lastScored = 0;
+        game.lastServe = 0;
+        game.Team2Sets += 1;
+        CounterTeam2Sets.innerText = game.Team2Sets
+        alert(`${inputTeam2.value} heeft gewonnen! Gefeliciteerd.`)
+    }
+
     undoButton.disabled = false;
     updateScreen();
 }
@@ -98,7 +125,6 @@ function undoLastPoint(event) {
         undoButton.disabled = true;
     }
 }
-
 
 undoButton.addEventListener('click',undoLastPoint);
 

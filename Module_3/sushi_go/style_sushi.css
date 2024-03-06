@@ -1,0 +1,33 @@
+body {
+    background-color: #f0f0f0; /* Lichtgrijze achtergrond */
+}
+.container {
+    background-color: white; /* Witte achtergrond voor het formulier */
+    padding: 20px;
+    border-radius: 8px; /* Afgeronde hoeken */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtiele schaduw */
+}
+h1 {
+    color: #007bff; 
+}
+.form-label {
+    color: #495057;
+}
+.form-control {
+    height: 30px; 
+    padding: 5px 10px; 
+    font-size: 14px; 
+}
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff; 
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+#totalPiecesWarning {
+    color: #dc3545;
+    display: none;
+    margin-top: 20px;
+}
