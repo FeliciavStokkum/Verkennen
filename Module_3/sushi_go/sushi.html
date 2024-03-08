@@ -9,57 +9,40 @@
 <body>
     <div class="container mt-5">
         <h1>Sushi Bestelformulier</h1>
-        <div id="sushiForm">
-            <div class="form-group sushi-item">
-                <label for="maki_komkommer" class="form-label">Maki komkommer:</label>
-                <input type="number" class="form-control" id="maki_komkommer" name="maki_komkommer" min="0" max="10" value="0">
-            </div>
-            <div class="form-group sushi-item">
-                <label for="sashimi" class="form-label">Sashimi:</label>
-                <input type="number" class="form-control" id="sashimi" name="sashimi" min="0" max="10" value="0">
-            </div>
-            <div class="form-group sushi-item">
-                <label for="nigiri" class="form-label">Nigiri:</label>
-                <input type="number" class="form-control" id="nigiri" name="nigiri" min="0" max="10" value="0">
-            </div>
-            <div class="form-group sushi-item">
-                <label for="california_roll" class="form-label">California roll:</label>
-                <input type="number" class="form-control" id="california_roll" name="california_roll" min="0" max="10" value="0">
-            </div>
-            <div class="form-group sushi-item">
-                <label for="crispy_roll" class="form-label">Crispy roll:</label>
-                <input type="number" class="form-control" id="crispy_roll" name="crispy_roll" min="0" max="10" value="0">
-            </div>
+    <div id="sushiForm">
+        <div class="form-group sushi-item">
+            <img src="media/maki_komkommer.png" alt="Maki Komkommer" height="50px">
+            <label for="maki_komkommer" class="form-label">Maki komkommer:</label>
+            <input type="number" class="form-control" id="maki_komkommer" name="maki_komkommer" min="0" max="10" value="0">
+        </div>
+        <div class="form-group sushi-item">
+            <img src="media/sashimi-fotor-bg-remover-20240307134617.png" alt="Maki Komkommer" height="50px">
+            <label for="sashimi" class="form-label">Sashimi:</label>
+            <input type="number" class="form-control" id="sashimi" name="sashimi" min="0" max="10" value="0">
+        </div>
+        <div class="form-group sushi-item">
+            <img src="media/nigiri.png" alt="Maki Komkommer" height="50px">
+            <label for="nigiri" class="form-label">Nigiri:</label>
+            <input type="number" class="form-control" id="nigiri" name="nigiri" min="0" max="10" value="0">
+        </div>
+        <div class="form-group sushi-item">
+            <img src="media/california_roll-fotor-bg-remover-20240307135440.png" alt="Maki Komkommer" height="50px">
+            <label for="california_roll" class="form-label">California roll:</label>
+            <input type="number" class="form-control" id="california_roll" name="california_roll" min="0" max="10" value="0">
+        </div>
+        <div class="form-group sushi-item">
+            <img src="media/26.Crispy-Roll.png" alt="Maki Komkommer" height="50px">
+            <label for="crispy_roll" class="form-label">Crispy roll:</label>
+            <input type="number" class="form-control" id="crispy_roll" name="crispy_roll" min="0" max="10" value="0">
+        </div>
             <button type="button" class="btn btn-primary" onclick="validateOrder()">Bestellen</button>
         </div>
-        <p id="totalPiecesWarning">Je kunt maximaal 10 stuks sushi bestellen.</p>
-        <p id="totalPieces">Totaal te bestellen stuks: 0</p>
+        <p id="minItemsWarning" style="display:alert;">Je moet minimaal 6 stuks sushi bestellen per ronde.</p>
+        <p id="totalPerRound">Totaal te bestellen stuks deze ronde: 10</p> <!-- Dit element toont het totaal aantal items per ronde -->
+        <p id="totalOrdered">Totaal geleverd in alle rondes: 0</p>
+        <p id="roundsLeft">Rondes over: 6</p>
+
     </div>
-
-    <script>
-        function validateOrder() {
-            const inputs = document.querySelectorAll('#sushiForm input[type="number"]');
-            let total = 0;
-            inputs.forEach(input => {
-                total += parseInt(input.value, 10);
-            });
-
-            document.getElementById('totalPieces').innerText = 'Totaal te bestellen stuks: ' + total;
-
-            if (total > 10) {
-                document.getElementById('totalPiecesWarning').style.display = 'block';
-                alert('Je bestelling is geplaatst!');
-            } else {
-                document.getElementById('totalPiecesWarning').style.display = 'none';
-            }
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            const inputs = document.querySelectorAll('#sushiForm input[type="number"]');
-            inputs.forEach(input => {
-                input.addEventListener('change', validateOrder);
-            });
-        });
-    </script>
+    <script src="sushi_go.js"></script>
 </body>
 </html>

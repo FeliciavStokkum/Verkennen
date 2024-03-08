@@ -1,0 +1,34 @@
+display onderaan het totaal te bestellen per ronde
+display onderaan het totaal geleverde in alle ronden tot dan toe.
+
+validatie op maximum aantal items (= 60). Dat is de grens voor het totaal aantal te bestellen items over alle rondes heen. De invoer en button disabelen.
+
+console.log
+console.log conditie
+
+<div id="sushiForm">
+            <div class="form-group sushi-item">
+                <img src="media/maki_komkommer.png" alt="Maki Komkommer" height="50px">
+                <label for="maki_komkommer" class="form-label">Maki komkommer:</label>
+                <input type="number" class="form-control" id="maki_komkommer" name="maki_komkommer" min="0" max="10" value="0">
+            </div>
+            <div class="form-group sushi-item">
+                <img src="media/sashimi-fotor-bg-remover-20240307134617.png" alt="Maki Komkommer" height="50px">
+                <label for="sashimi" class="form-label">Sashimi:</label>
+                <input type="number" class="form-control" id="sashimi" name="sashimi" min="0" max="10" value="0">
+            </div>
+            <div class="form-group sushi-item">
+                <img src="media/nigiri.png" alt="Maki Komkommer" height="50px">
+                <label for="nigiri" class="form-label">Nigiri:</label>
+                <input type="number" class="form-control" id="nigiri" name="nigiri" min="0" max="10" value="0">
+            </div>
+            <div class="form-group sushi-item">
+                <img src="media/california_roll-fotor-bg-remover-20240307135440.png" alt="Maki Komkommer" height="50px">
+                <label for="california_roll" class="form-label">California roll:</label>
+                <input type="number" class="form-control" id="california_roll" name="california_roll" min="0" max="10" value="0">
+            </div>
+            <div class="form-group sushi-item">
+                <img src="media/26.Crispy-Roll.png" alt="Maki Komkommer" height="50px">
+                <label for="crispy_roll" class="form-label">Crispy roll:</label>
+                <input type="number" class="form-control" id="crispy_roll" name="crispy_roll" min="0" max="10" value="0">
+            </div>

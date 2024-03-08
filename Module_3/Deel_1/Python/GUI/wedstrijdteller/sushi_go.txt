@@ -1,0 +1,21 @@
+Ontwerpfase:
+- Bepaal wat voor restaurant
+- Denk na over de layout! schetsje? + functionaliteit
+- Gerechten! bepaal minimaal 3 gerechten!
+
+Ontwikkel:
+- HTML schrijven 
+	- ChatGPT
+	- Of pak iets wat je al hebt, wat erop lijkt
+- Verfraaien! Images toevoegen, leuke namen bedenken!
+- Koppel JS en start de functionaliteit!
+- Bestellen per ronde
+- Afleveren per ronde
+- Rondes aftellen
+- Totalen bijhouden
+- Meldingen
+
+Wat moet er gebeuren?
+- Als je op de knop bestellen klikt moet er gekeken of de max producten niet overschreden is 
+
+
