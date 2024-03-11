@@ -1,7 +1,7 @@
 let totalRounds = 6; // Aantal rondes
 let roundsLeft = totalRounds; // Variabele om resterende rondes bij te houden
 let totalOrderedAllRounds = 0;
-let maxItemsPerOrder = 60;  // Maximaal aantal items per alle rondes
+const maxItemsPerOrder = 60;  // Maximaal aantal items per alle rondes
 let maxItemsPerRound = 12; // Maximaal aantal items per ronde
 let minItemsPerRound = 6;  // Minimaal aantal items per ronde
 
@@ -9,7 +9,7 @@ function validateOrder() {
     const totalThisRound = calculateTotalThisRound();
 
     if (totalThisRound < minItemsPerRound) {
-        document.getElementById('minItemsWarning').style.display = 'block';
+        document.getElementById('minItemsWarning').style.display = 'block'; //kan ook enkel id, getelement mogelijk niet nodig
         alert(`Je moet minimaal per ronde ${minItemsPerRound} stuks bestellen`);
         return;
     } else {
@@ -50,9 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // De rest van je functies blijven ongewijzigd
-
-
-
 function calculateTotalThisRound() {
     const inputs = document.querySelectorAll('#sushiForm input[type="number"]');
     let total = 0;
