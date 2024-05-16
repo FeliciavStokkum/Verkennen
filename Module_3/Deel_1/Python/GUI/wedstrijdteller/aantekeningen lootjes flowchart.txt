@@ -1,0 +1,27 @@
+1. Start
+
+2. Maak een lijst voor de namen
+
+3. Vraag de naam (unieke naam)
+
+4. Voeg naam aan lijst(melding)
+
+5. if naam in lijst, vraag de naam opnieuw(niet toevoegen aan lijst)
+
+6. Vraag of de gebruiker nog een naam wilt invoeren.
+
+7. If nog een keer invoeren == ja, input naam(vraag)
+
+4. Voeg naam aan lijst(melding)
+
+5. if naam in lijst, vraag de naam opnieuw(niet toevoegen aan lijst)
+
+8. If nog een keer invoeren == nee, controleer of er meer dan drie namen in de lijst staan
+
+9. namen < 3, geef een melding en vraag of de gebruiker nog een naam wilt invoeren
+
+10. als  namen gelijk aan of groter dan 3
+
+11. Iedereen krijgt random een uniek lootje
+
+12. Als het lootje gelijk is aan de naam
