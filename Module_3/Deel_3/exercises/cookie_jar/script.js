@@ -27,6 +27,7 @@ function create_button(soortKnop){
 }
 
 function proccess_takecookie_click(){
+    
     let jar = document.getElementById('cookie-jar');
     let currentcookies; 
 
